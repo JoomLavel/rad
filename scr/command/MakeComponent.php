@@ -6,10 +6,10 @@
  * Time: 18:50
  */
 
-namespace JoomLavel\Command;
+namespace JoomLavel\Rad\Command;
 
-use JoomLavel\Service\ComponentGenerator;
-use JoomLavel\Service\ZipGenerator;
+use JoomLavel\Rad\Service\ComponentGenerator;
+use JoomLavel\Rad\Service\ZipGenerator;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

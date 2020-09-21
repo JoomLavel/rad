@@ -6,7 +6,7 @@
  * Time: 18:50
  */
 
-namespace JoomLavel\Command;
+namespace JoomLavel\Rad\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

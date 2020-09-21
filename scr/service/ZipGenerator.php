@@ -6,7 +6,7 @@
  * Time: 23:01
  */
 
-namespace JoomLavel\Service;
+namespace JoomLavel\Rad\Service;
 
 use App\Service\FlxZipArchive;
 

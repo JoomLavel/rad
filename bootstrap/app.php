@@ -11,7 +11,7 @@ require __DIR__ . '/../scr/command/MakeComponent.php';
 require __DIR__ . '/../scr/service/ComponentGenerator.php';
 require __DIR__ . '/../scr/service/ZipGenerator.php';
 
-use JoomLavel\Command\MakeComponent;
+use JoomLavel\Rad\Command\MakeComponent;
 use Symfony\Component\Console\Application;
 
 $application = new Application();
