@@ -6,7 +6,7 @@
  * Time: 20:11
  */
 
-namespace App\Service;
+namespace JoomLavel\Service;
 
 class ComponentGenerator
 {
