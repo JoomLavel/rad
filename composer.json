@@ -1,6 +1,6 @@
 {
-    "name": "joomlavel/connect",
-    "description": "Package for Joomla component RAD generator, including templates: none, dummy, hello world and JoomLavel API Connect",
+    "name": "joomlavel/rad",
+    "description": "RAD Tool for JoomLavel ecosystem",
     "type": "package",
     "require": {
         "php": ">=5.4.0",
@@ -18,7 +18,7 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "JoomLavel\\Connect\\": "src/"
+            "JoomLavel\\Rad\\": "src/"
         }
     }
 }
