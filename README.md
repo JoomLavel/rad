@@ -15,14 +15,12 @@ _php JoomLavel make:component BobsFirstComponent --zip_
 _php JoomLavel make:component BobsFirstComponent -z_
 
 **usage:**
-_php JoomLavel make:component BobsFirstComponent -z -v_ 
+_php JoomLavel make:component BobsFirstComponent -z --verbose_ 
+
+**usage:**
+_php JoomLavel make:component BobsFirstComponent -z -v -f_ 
 
 //TODO:
 php JoomLavel zip BobsFirstComponent
 
 
-**notes:**
-
-_composer require symfony/console_
-
-_composer require nelexa/zip_
