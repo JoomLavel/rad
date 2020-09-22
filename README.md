@@ -17,6 +17,9 @@ _php JoomLavel make:component BobsFirstComponent -z_
 **usage:**
 _php JoomLavel make:component BobsFirstComponent -z -v_ 
 
+//TODO:
+php JoomLavel zip BobsFirstComponent
+
 
 **notes:**
 

@@ -8,6 +8,7 @@
 
 return [
 
+    /*general configuration*/
     'general' =>[
         'path' => __DIR__,
     ],
@@ -17,21 +18,19 @@ return [
         'templates' => [
             'default' => 'joomlavelcnct',
             'path' => 'storage\templates',
-            //'version' => 1,  //TODO:
-            //'repository' => 'https://github.com/Joomlavel/templates' //TODO:
         ],
 
+        /* directory for editing components*/
         'workplace' => [
             'path' => 'storage\workplace',
-            //'version' => 1  //TODO:
+            'cleanExec'=> '',
         ],
 
-        /* TODO:
+        /* directory for final zipped components*/
         'publish' => [
-            'path' => '../storage/publish',
-            'version' => 1,
-            'exec' => ''
+            'path' => 'storage\publish',
+            /*i.e. "C:\Program Files\PuTTY\putty.exe" or bash file*/
+            'exec' => '',
         ]
-        */
     ],
 ];

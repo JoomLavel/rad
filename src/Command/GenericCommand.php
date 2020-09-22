@@ -59,6 +59,14 @@ class GenericCommand extends Command
         $this->io->progressAdvance();
     }
 
+    public function addWarningAndBreak(string $text)
+    {
+        $this->io->writeln("");
+        $this->io->warning($text);
+        $this->io->warning("unfinished!");
+        die();
+    }
+
     public function addProgressBar(int $steps)
     {
         $this->io->progressStart($steps);

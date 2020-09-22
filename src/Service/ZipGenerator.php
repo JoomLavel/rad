@@ -8,18 +8,16 @@
 
 namespace JoomLavel\Rad\Service;
 
-use App\Service\FlxZipArchive;
-
 
 class ZipGenerator
 {
-    public function zipDirectory(string $name, string $path)
+    public function zipDirectory(string $name, string $directoryToZip)
     {
         $zipFile = new \PhpZip\ZipFile();
         try {
             $zipFile
-                ->addDirRecursive($path)
-                ->saveAsFile($name . '.zip');
+                ->addDirRecursive($directoryToZip)
+                ->saveAsFile($name. '.zip');
             $allInfo = $zipFile->getAllInfo();
             $zipFile->close();
         } catch (\PhpZip\Exception\ZipException $e) {
@@ -27,6 +25,10 @@ class ZipGenerator
         } finally {
             $zipFile->close();
         }
-        return $allInfo;
+        if (!empty($allInfo)) {
+            return $allInfo;
+        }else{
+            return false;
+        }
     }
 }
